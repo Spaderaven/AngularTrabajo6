@@ -2,6 +2,11 @@
 <div class="heroes-menu">
   <a *ngFor="let hero of heroes"
     routerLink="/detail/{{hero.id}}">
-    {{hero.name}}
+    <strong>    
+        {{hero.name}}, 
+    </strong>
+    <small>
+        Puntos: {{hero.points}}
+    </small>
   </a>
 </div>
